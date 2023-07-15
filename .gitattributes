@@ -1,0 +1,12 @@
+# Set text files to use LF (Unix-style) line endings
+*.txt text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.ts text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+
+# Exclude binary files from line ending conversions
+*.png binary
+*.jpg binary
+*.gif binary
