@@ -1,6 +1,5 @@
-安裝node.js
 FROM node  
- 
+
 RUN apt-get update && apt-get install -y nodejs
 
 RUN npm install -g npm@latest
