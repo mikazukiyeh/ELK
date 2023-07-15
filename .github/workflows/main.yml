@@ -1,0 +1,25 @@
+name: Dockerfile Test
+on: push
+
+jobs:
+  test-job:
+    name: Dockerfile Test Job
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Docker
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y docker.io
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 'latest'
+
+    - name: Build and test Docker image
+      run: |
+        docker build -t myimage .
+        docker run myimage npm test
