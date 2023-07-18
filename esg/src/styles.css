@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    /* 前一個檔案學到加上padding跟border會導致原本設置的長寬會變更大，加上這個後padding跟border就會往內切，而最大值將會保持在你設定的長寬。 */
+}
+body {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+  }
