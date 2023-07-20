@@ -105,4 +105,5 @@ header {
     justify-content: space-between;
     width: 80%;
     margin: 40px auto;
+    flex-wrap: wrap;
 }
