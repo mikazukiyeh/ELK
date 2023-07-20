@@ -12,6 +12,7 @@ body {
   
 .background-container {
     position: fixed;
+    z-index: -10;
     top: 0;
     left: 0;
     width: 100%;
@@ -97,4 +98,11 @@ header {
     font-family: 'Noto Sans TC', serif;
     font-size: 6vw;
     align-items: center;
+}
+
+.main-list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 40px auto;
 }
