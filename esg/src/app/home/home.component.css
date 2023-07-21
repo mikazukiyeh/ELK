@@ -4,11 +4,6 @@
     box-sizing: border-box;
     /* 前一個檔案學到加上padding跟border會導致原本設置的長寬會變更大，加上這個後padding跟border就會往內切，而最大值將會保持在你設定的長寬。 */
 }
-body {
-    height: 1000px;
-    margin: 0;
-    padding: 0;
-  }
   
 .background-container {
     position: fixed;
@@ -22,40 +17,13 @@ body {
     background-size: cover;
 }
 
-#horizontalMenu {
-    text-align: right;
-}
-
-.main-nav{
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(188, 222, 233, 0.8);
-    border-bottom: 1px ridge #ccc;
-    z-index: 10;
-}
-
-
-#horizontalMenu > .navMenuLink{
-    max-width: 148px;
-}
-
-.navMenuLink{
-    color:hsla(210, 26%, 7%, 0.7);
-    list-style-type: none;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    padding:0;
-    margin:0;
-}
+/* 頁首樣式 */
 
 header {
-    
-    display: flex;
+    flex:1;
+    display: block;
     flex-direction: column; /* 讓內容垂直排列 */
+    margin: 1vw;
 }
 
 .head_title {
@@ -65,24 +33,30 @@ header {
     flex-direction: column; /* 垂直排列 */
     width: 100%;
     height: 100%;
-    opacity: 1.0;
     z-index: 2;
+    background-image: url('../../assets/home-img.png');
+    background-size: contain;
+    background-position: center; /* 將背景圖片置中 */
+    background-repeat: no-repeat; /* 不重複背景圖片 */
+    transform: scale(.8);
 }
 
 .title {
-    margin-top: 50px; /* 距離上方的間距 */
+    position: relative;
+    margin-top: 5vw; /* 距離上方的間距 */
     margin-bottom: 0;
-    width: 40%;
-    height: 40%;
+    width: 35vw;
+    height: 35vw;
 }
 
 .welcome-font{
-    margin-top: 80px;
+    position: relative;
+    margin-top: 8vw;
     background-color: aliceblue;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    padding:0 20px 0 20px;
-    margin-bottom: 20px; 
+    border: 0.1vw solid #ccc;
+    border-radius: 40px;
+    padding: 0.5vw 0.5vw;
+    margin-bottom: 4vw;
 }
 
 .welcome{
@@ -100,10 +74,97 @@ header {
     align-items: center;
 }
 
-.main-list {
+/* 主題樣式 */
+
+main {
+    flex: 1 ;
+    display: block;
+    background-color: rgb(248, 248, 248); /* 設定背景顏色並調整透明度 */
+    /* border-radius: 40px; */
+    padding: 20px; /* 加入 padding 來調整容器內容與邊框的距離 */
+    box-sizing: border-box; /* 確保 padding 不會影響容器寬度 */
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 40px auto;
-    flex-wrap: wrap;
-}
+    flex-direction: column; /* 讓內容垂直排列 */
+    /* align-items: center;  *//* 水平置中 */
+  }
+  
+
+.main-title-container {
+    display: flex;
+  }
+
+.main-title {
+    display: inline-block;
+    background-color: aliceblue;
+    border: 2px solid #004b84; /* 調整邊框顏色 */
+    border-radius: 20px;
+    padding: 2vw 4vw; /* 調整 padding 值，增加內容和邊框之間的距離 */
+    margin-bottom: 4vw;
+    text-align: left;
+    margin-top: 4vw;
+    align-self: flex-start;
+  }
+  
+  .main-title h2 {
+    font-size: 4vw;
+    color: #004b84;
+    font-family: 'Noto Sans TC', serif;
+    margin: 0; /* 移除預設的 h2 標籤邊距 */
+  }
+
+ .main-list {
+    background-color: rgba(188, 222, 233, 0.8);
+    display: flex;
+    justify-content: center; /* 將 .main-title 水平置中 */
+    flex-wrap: wrap; /* 讓容器自動換行，以避免擠在一起 */
+    gap: 20px; /* 設置容器之間的水平和垂直間距 */
+    margin-top: 20px; /* 與網頁頂端的距離 */
+    margin-left: 20px; /* 與網頁左側的距離 */
+    margin-right: 20px; /* 與網頁右側的距離 */
+    border-radius: 40px; /* 圓角半徑 */
+    padding: 20px; /* 加入 padding 來調整容器內容與邊框的距離 */
+    box-sizing: border-box; /* 確保 padding 不會影響容器寬度 */
+    margin: 0 auto;
+}  
+
+/* 頁尾樣式 */
+
+footer {
+    background-color: #484f94;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .earth-img {
+    margin-bottom: 20px;
+  }
+  
+
+  .earth {
+    width: 8vw;
+    height: 8vw;
+  }
+  
+  .option {
+    text-align: center;
+  }
+  
+  .option span {
+    font-size: 18px;
+    color: #e26776;
+  }
+  
+  .option p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
