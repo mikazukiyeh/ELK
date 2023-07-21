@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MainitemComponent } from './mainitem/mainitem.component';
+import { IframeDialogComponent } from './iframe-dialog/iframe-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MainitemComponent
+    MainitemComponent,
+    IframeDialogComponent
   ],
   imports: [
     BrowserModule,

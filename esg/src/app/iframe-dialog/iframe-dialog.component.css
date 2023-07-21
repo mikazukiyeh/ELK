@@ -1,0 +1,19 @@
+button {
+    background-color: #4CAF50; /* 背景顏色 */
+    color: white; /* 文字顏色 */
+    padding: 10px 20px; /* 上下左右的填充 */
+    border: none; /* 去除邊框 */
+    border-radius: 10px; /* 圓角 */
+    cursor: pointer;
+    font-size: 16px; /* 文字大小 */
+  }
+  
+  /* 按鈕懸停效果 */
+  button:hover {
+    background-color: #45a049; /* 懸停時的背景顏色 */
+  }
+  
+  /* 按鈕點擊效果 */
+  button:active {
+    background-color: #207c23; /* 點擊時的背景顏色 */
+  }
