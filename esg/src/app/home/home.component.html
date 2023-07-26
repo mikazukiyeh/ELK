@@ -14,8 +14,8 @@
       <h2>關於我們提供的議題有：</h2>
     </div>
   </div>
-  <div class="main-list">
-    <app-mainitem></app-mainitem>  <app-mainitem></app-mainitem>  <app-mainitem></app-mainitem>
+  <div class="main-list" >
+    <app-mainitem *ngFor="let image of images" [path]="image.path"></app-mainitem>
   </div>
 </main>
 <footer>

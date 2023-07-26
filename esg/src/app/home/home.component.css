@@ -30,8 +30,8 @@ header {
     position: relative;
     margin-top: 5vw; /* 距離上方的間距 */
     margin-bottom: 0;
-    width: 35vw;
-    height: 35vw;
+    width: 30vw;
+    height: 30vw;
 }
 
 .welcome-font{
