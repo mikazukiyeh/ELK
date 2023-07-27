@@ -83,15 +83,15 @@ main {
     background-color: aliceblue;
     border: 2px solid #004b84; /* 調整邊框顏色 */
     border-radius: 20px;
-    padding: 2vw 4vw; /* 調整 padding 值，增加內容和邊框之間的距離 */
+    padding: 1vw 2vw; /* 調整 padding 值，增加內容和邊框之間的距離 */
     margin-bottom: 4vw;
+    margin-top:5px;
     text-align: left;
-    margin-top: 4vw;
     align-self: flex-start;
   }
   
   .main-title h2 {
-    font-size: 4vw;
+    font-size: 30px;
     color: #004b84;
     font-family: 'Noto Sans TC', serif;
     margin: 0; /* 移除預設的 h2 標籤邊距 */
@@ -100,17 +100,15 @@ main {
  .main-list {
     background-color: rgba(188, 222, 233, 0.8);
     display: flex;
-    justify-content: center; /* 將 .main-title 水平置中 */
-    flex-wrap: wrap; /* 讓容器自動換行，以避免擠在一起 */
-    gap: 20px; /* 設置容器之間的水平和垂直間距 */
-    margin-top: 20px; /* 與網頁頂端的距離 */
-    margin-left: 20px; /* 與網頁左側的距離 */
-    margin-right: 20px; /* 與網頁右側的距離 */
+    justify-content: center;
     border-radius: 40px; /* 圓角半徑 */
-    padding: 20px; /* 加入 padding 來調整容器內容與邊框的距離 */
+    flex-wrap: wrap; /* 讓容器自動換行，以避免擠在一起 */
+    padding: 40px 80px; /* 加入 padding 來調整容器內容與邊框的距離 */
+    gap: 100px; /* 設置容器之間的水平和垂直間距 */
     box-sizing: border-box; /* 確保 padding 不會影響容器寬度 */
     margin: 0 auto;
-}  
+    flex-grow: 1;
+ }  
 
 /* 頁尾樣式 */
 

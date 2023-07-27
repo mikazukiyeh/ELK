@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="main-list" >
-    <app-mainitem *ngFor="let image of images" [path]="image.path"></app-mainitem>
+    <app-mainitem *ngFor="let image of images" [path]="image.path" [title]="image.title"></app-mainitem>
   </div>
 </main>
 <footer>

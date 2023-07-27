@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class MainitemComponent implements OnInit {
 
   @Input() path: string = '';
+  @Input() title: string = '';
 
   constructor(private router: Router) { }
 
