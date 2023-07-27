@@ -1,6 +1,7 @@
 export interface Image {
     path: string;
     title: string; // 新增 title 屬性用於說明文字
+
   }
   
   export const IMAGES: Image[] = [

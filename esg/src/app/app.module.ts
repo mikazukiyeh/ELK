@@ -7,6 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { MainitemComponent } from './mainitem/mainitem.component';
 import { IframeDialogComponent } from './iframe-dialog/iframe-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NevComponent } from './nev/nev.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -15,11 +21,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     MainitemComponent,
     IframeDialogComponent,
+    NevComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
   
   ],
   providers: [],

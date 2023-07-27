@@ -5,9 +5,118 @@
 /* 頁首樣式 */
 
 header {
-    display: block;
     flex-direction: column; /* 讓內容垂直排列 */
-    margin: 2vw;
+    margin:2vw;
+    position: relative; /* 讓 header 成為相對定位的容器 */
+}
+
+/* 導航欄容器 */
+.navgation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* 調整高度根據您的需求 */
+  background-color: transparent; /* 設定初始為透明 */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 20px; */
+  z-index: 999;
+  opacity: 0; /* 初始時設為透明 */
+  transition: opacity 0.3s; /* 添加過渡效果 */
+}
+
+/* 滑到main標籤起始處後，將導覽欄顯示為非透明 */
+header.show-nav .navgation {
+  opacity: 1;
+}
+
+
+/* 導航欄容器 */
+.sidenav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* 調整高度根據您的需求 */
+  background-color: rgb(9, 162, 29); 
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  transition: background-color 0.3s; /* 添加過渡效果 */
+  
+}
+
+
+/* 漢堡按鈕容器 */
+.menu {
+  display: none;
+  text-decoration: none;
+}
+
+/* 移除連結底線 */
+.mat-button-base .mat-button-wrapper {
+  text-decoration: none;
+}
+
+/* 小漢堡在螢幕縮小時顯示 */
+button[aria-label="Toggle sidenav"] {
+  display: block;
+  margin-left: auto;
+}
+
+/* 隱藏桌面尺寸下的小漢堡 */
+@media (min-width: 768px) {
+  button[aria-label="Toggle sidenav"] {
+    display: none;
+  }
+
+  .drawer-content {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* 橫向選單樣式 */
+.drawer-content a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.drawer-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 漢堡選單容器 */
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(55, 152, 118, 0.585);
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* 边框颜色和透明度 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 立体感 */
+  min-width: 200px; /* 最小宽度，根据内容调整 */
+}
+
+/* 隐藏大屏幕下的 .drawer-content */
+.hide-drawer-content .drawer-content {
+  display: none;
 }
 
 .head_title {
@@ -27,7 +136,7 @@ header {
 
 .title {
     position: relative;
-    margin-top: 1vw; /* 距離上方的間距 */
+    margin-top: 2vw; /* 距離上方的間距 */
     margin-bottom: 0;
     width: 30vw;
     height: 30vw;
@@ -64,8 +173,7 @@ main {
     flex: 1 ;
     display: block;
     background-color: rgb(248, 248, 248); /* 設定背景顏色並調整透明度 */
-    /* border-radius: 40px; */
-    padding: 20px; /* 加入 padding 來調整容器內容與邊框的距離 */
+    padding: 20px; 
     box-sizing: border-box; /* 確保 padding 不會影響容器寬度 */
     display: flex;
     flex-direction: column; /* 讓內容垂直排列 */
@@ -102,7 +210,7 @@ main {
     justify-content: center;
     border-radius: 40px; /* 圓角半徑 */
     flex-wrap: wrap; /* 讓容器自動換行，以避免擠在一起 */
-    padding: 40px 80px; /* 加入 padding 來調整容器內容與邊框的距離 */
+    padding: 40px 40px; /* 加入 padding 來調整容器內容與邊框的距離 */
     gap: 100px; /* 設置容器之間的水平和垂直間距 */
     box-sizing: border-box; /* 確保 padding 不會影響容器寬度 */
     margin: 0 auto;
