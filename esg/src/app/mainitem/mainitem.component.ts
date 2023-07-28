@@ -6,19 +6,17 @@ import { Router } from '@angular/router';
   templateUrl: './mainitem.component.html',
   styleUrls: ['./mainitem.component.css']
 })
-export class MainitemComponent implements OnInit {
+export class MainitemComponent {
 
   @Input() path: string = '';
   @Input() title: string = '';
+  @Input() linkrouter: string = '';
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
-  }
-
   // 點擊mainitem時在新分頁中打開Iframe頁面
   openIframePage(): void {
-    this.router.navigateByUrl('/iframe-dialog');
+    this.router.navigateByUrl(this.linkrouter);
   }
 
 }

@@ -12,6 +12,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { TransportationComponent } from './transportation/transportation.component';
+import { RecycleComponent } from './recycle/recycle.component';
+import { EnvironmentalComponent } from './environmental/environmental.component';
 
 
 @NgModule({
@@ -20,6 +23,9 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     MainitemComponent,
     IframeDialogComponent,
+    TransportationComponent,
+    RecycleComponent,
+    EnvironmentalComponent,
   ],
   imports: [
     BrowserModule,

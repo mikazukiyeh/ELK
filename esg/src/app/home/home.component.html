@@ -9,13 +9,24 @@
   </div>
 </header>
 <main>
-  <div class="main-title-container">
-    <div class="main-title">
-      <h2>關於我們提供的議題有：</h2>
+  <div class="container">
+    <div class="about-esg">
+      <img class="esgimg" src="../../assets/aboutESG.png" alt="ESG" title="aboutESG">
     </div>
-  </div>
-  <div class="main-list" >
-    <app-mainitem *ngFor="let image of images" [path]="image.path" [title]="image.title"></app-mainitem>
+    <div class="main-content">
+      <div class="main-title-container">
+        <div class="main-title">
+          <h2><span class="leaf-icon">🍃</span> 環境保護也是大家共同關心的事：</h2>
+    <ul>
+      <li>環境保護包含碳排放量、污水管理、環境汙染防治與控制</li>
+      <li>我們可以從以下方面來看：</li>
+    </ul>
+        </div>
+      </div>
+      <div class="main-list" >
+        <app-mainitem *ngFor="let image of images" [path]="image.path" [title]="image.title" [linkrouter]="image.linkrouter"></app-mainitem>
+      </div>
+    </div>
   </div>
 </main>
 <footer>
