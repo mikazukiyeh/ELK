@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { MainitemComponent } from './mainitem/mainitem.component';
 import { IframeDialogComponent } from './iframe-dialog/iframe-dialog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NevComponent } from './nev/nev.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -21,7 +20,6 @@ import { MatListModule } from '@angular/material/list';
     HomeComponent,
     MainitemComponent,
     IframeDialogComponent,
-    NevComponent,
   ],
   imports: [
     BrowserModule,
