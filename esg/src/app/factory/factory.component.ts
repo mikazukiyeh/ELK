@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-transportation',
-  templateUrl: './transportation.component.html',
-  styleUrls: ['./transportation.component.css']
+  selector: 'app-factory',
+  templateUrl: './factory.component.html',
+  styleUrls: ['./factory.component.css']
 })
-export class TransportationComponent implements OnInit {
+export class FactoryComponent {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -16,6 +16,4 @@ export class TransportationComponent implements OnInit {
   navigateToHome(): void {
     this.router.navigateByUrl('/home', { skipLocationChange: true });
   }
-
-
 }
