@@ -129,9 +129,9 @@ main {
   font-weight: bold;
   font-size: 26px;
 
-  .leaf-icon {
-    margin-right: 5px; 
-  }
+.leaf-icon {
+  margin-right: 5px; 
+}
 
   
   ul {
