@@ -15,7 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import { RecycleComponent } from './recycle/recycle.component';
 import { EnvironmentalComponent } from './environmental/environmental.component';
 import { FactoryComponent } from './factory/factory.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -37,6 +37,7 @@ import { FactoryComponent } from './factory/factory.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    FormsModule
   
   ],
   providers: [],

@@ -6,15 +6,19 @@ import { Router } from '@angular/router';
   templateUrl: './environmental.component.html',
   styleUrls: ['./environmental.component.css']
 })
-export class EnvironmentalComponent implements OnInit {
-  constructor(private router: Router) { }
+export class EnvironmentalComponent {
 
-  ngOnInit(): void {
-  }
+  // 在構造函數中注入 Router
+  constructor(private router: Router) {}
 
   // 回到首頁，使用 Angular 的路由導航
   navigateToHome(): void {
-    this.router.navigateByUrl('/home', { skipLocationChange: true });
+    this.router.navigateByUrl('/home'); 
   }
 
+  selectedOption = 'hotel';
+
+  onOptionChange() {
+  
+  }
 }

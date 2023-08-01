@@ -1,9 +1,35 @@
-<h1>environmental works!</h1>
+<h1 class="title">environmental works!</h1>
+
+<div class="select-container">
+  <label for="options">選擇一個項目：</label>
+  <select id="options" [(ngModel)]="selectedOption" (change)="onOptionChange()">
+    <option value="hotel">旅館</option>
+    <option value="restaurant">餐廳</option>
+    <option value="restroom">公廁</option>
+  </select>
+
+  <div class="instructions">
+    <div *ngIf="selectedOption === 'hotel'">你選擇了「旅館」，以下是相應的 iframe：</div>
+    <div *ngIf="selectedOption === 'restaurant'">你選擇了「餐廳」，以下是相應的 iframe：</div>
+    <div *ngIf="selectedOption === 'restroom'">你選擇了「公廁」，以下是相應的 iframe：</div>
+  </div>
+</div>
 
 <div class="container">
-    <div class="iframe-page">
-        <!-- 嵌入的Iframe -->
-    </div>
+  <ng-container *ngIf="selectedOption === 'hotel'">
+    <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards?auth_provider_hint=anonymous1#/view/dd1c1bc0-2c40-11ee-afac-f7bcffaa2a37?embed=true&_g=(filters%3A!())" height="600" width="800"></iframe>
+  </ng-container>
+
+  <ng-container *ngIf="selectedOption === 'restaurant'">
+    <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards?auth_provider_hint=anonymous1#/view/205b0da0-2c2e-11ee-afac-f7bcffaa2a37?embed=true&_g=(filters%3A!())" height="600" width="800"></iframe>
+  </ng-container>
+
+  <ng-container *ngIf="selectedOption === 'restroom'">
+    <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards?auth_provider_hint=anonymous1#/view/26ab8590-2efe-11ee-afac-f7bcffaa2a37?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3A'2023-06-30T02%3A26%3A20.012Z'%2Cto%3Anow))" height="600" width="800"></iframe>
+  </ng-container>
+</div>
+  
+
     <div> 
         <!-- 回到首頁的按鈕，使用 Angular 的路由導航回首頁 -->
         <button class="back-to-home" (click)="navigateToHome()"></button>
