@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 /* 標題 */
 .title {
@@ -49,66 +50,44 @@
 
 /*選單佈局 */
 .select-container {
-  display: flex;
+  display: grid;
   justify-content: center;
+  align-items: center;
+  margin: 20px 250px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  background-color: rgba(206, 200, 212, 0.5);
+  padding:20px;
+  border-radius: 10px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.2rem;
 }
 
 
 .input-container {
-  flex: 0 0 20%;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
-#options {
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  font-size: 18px;
-  font-family: 'Noto Sans TC', sans-serif; 
-  cursor: pointer;
-  padding: 5px;
-  color: #333;
-  text-align: center; /* 將下拉選單文字靠右對齊 */
-  direction: rtl; /* 調整箭頭位置 */
-  width: 70%; /* 設定寬度為70% */
-  margin-left: 30%; /* 調整左邊的間距為30% */
-  border-radius: 8px; /* 圓角矩形框框 */
-  background-color: #f0f0f0fc; /* 背景色 */
-  padding: 10px; /* 內部間距 */
+
+select {
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: 'cwTeXYen', sans-serif;
+  
 }
 
-/* 隱藏下拉選單的預設箭頭 */
-#options::-ms-expand {
-  display: none;
-}
 
-/* 自訂下拉選單的箭頭 */
-#options::before {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #333; /* 設定箭頭的顏色 */
-  margin-left: 5px; /* 調整箭頭與文字之間的距離 */
-}
-
-/* 調整instructions的寬度為50% */
 .instructions {
-  flex: 0 0 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-/* 進一步美化標題容器 */
-.title-container {
-  display: flex;
-  justify-content: flex-start; /* 將標題容器靠左對齊 */
-  margin-bottom: 30px;
-  margin-left: 20px; /* 調整左邊的間距 */
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 1.5;
 }
 
 
@@ -117,6 +96,8 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  width: 100%; /* 設置 iframe 寬度為容器的100% */
+  height: 400px; /* 設置 iframe 高度為400像素，您可以根據需要調整這個值 */
 }
 
 /*回到頁首*/
