@@ -1,17 +1,21 @@
-<h1 class="title">environmental works!</h1>
+<div class="title-container">
+    <div class="title">環保標章</div>
+</div>
 
 <div class="select-container">
-  <label for="options">選擇一個項目：</label>
+    <div class="input-container">
+  <label for="options">項目：</label>
   <select id="options" [(ngModel)]="selectedOption" (change)="onOptionChange()">
     <option value="hotel">旅館</option>
     <option value="restaurant">餐廳</option>
     <option value="restroom">公廁</option>
   </select>
+    </div>
 
   <div class="instructions">
-    <div *ngIf="selectedOption === 'hotel'">你選擇了「旅館」，以下是相應的 iframe：</div>
-    <div *ngIf="selectedOption === 'restaurant'">你選擇了「餐廳」，以下是相應的 iframe：</div>
-    <div *ngIf="selectedOption === 'restroom'">你選擇了「公廁」，以下是相應的 iframe：</div>
+    <div *ngIf="selectedOption === 'hotel'">你選擇了「旅館」，以下是相應的 iframe</div>
+    <div *ngIf="selectedOption === 'restaurant'">你選擇了「餐廳」，以下是相應的 iframe</div>
+    <div *ngIf="selectedOption === 'restroom'">你選擇了「公廁」，以下是相應的 iframe</div>
   </div>
 </div>
 
