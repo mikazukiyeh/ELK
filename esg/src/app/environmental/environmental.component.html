@@ -2,6 +2,17 @@
     <div class="title">環保標章</div>
 </div>
 
+<div class="img-container">
+  <div class="carousel">
+    <div class="slide" [ngStyle]="{'transform': 'translateX(' + (-currentIndex * 100) + '%)'}">
+      <div class="can" ><img src="../../assets/綠色餐廳標章.png" title="綠色餐廳"></div>
+      <div class="can" ><img src="../../assets/綠色宣言.png" title="綠色宣言"></div>
+      <div class="can" ><img src="../../assets/環保旅館.png" title="環保旅館"></div>
+      <div class="can" ><img src="../../assets/環保旅店.png" title="環保旅店是什麼"></div>
+    </div>
+  </div>
+</div>
+
 <div class="select-container">
     <div class="input-container">
   <label for="options">項目：</label>
@@ -34,7 +45,19 @@
 </div>
   
 
-    <div> 
-        <!-- 回到首頁的按鈕，使用 Angular 的路由導航回首頁 -->
-        <button class="back-to-home" (click)="navigateToHome()"></button>
+<div> 
+  <!-- 回到首頁的按鈕，使用 Angular 的路由導航回首頁 -->
+  <button class="back-to-home" (click)="navigateToHome()"></button>
+</div>
+
+<footer class="footer">
+  <div class="info">
+    <div class="info-message">
+      <span class="from"> 資料來源：</span>
+      <a href="https://greenlife.epa.gov.tw/categories/accommodation" target="_blank">全民綠生活 - 旅館</a>
     </div>
+    <div class="info-message">
+      <a href="https://greenlife.epa.gov.tw/categories/restaurant" target="_blank">全民綠生活 - 餐廳</a>
+    </div>
+  </div>
+</footer>

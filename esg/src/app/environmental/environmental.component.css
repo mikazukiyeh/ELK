@@ -48,6 +48,36 @@
   }
 }
 
+/* 圖片輪播 */
+.img-container{
+  background-color: #cfd4eeb4;
+  padding: 20px;
+  margin: 0 100px;
+  border-radius: 20px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 80vw; /* 輪播容器的最大寬度 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+.slide {
+  display: flex;
+  transition: transform 0.5s ease; /* 使用transform實現平滑過渡 */
+}
+
+.can {
+  flex: 0 0 50%;
+}
+
+.can img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /*選單佈局 */
 .select-container {
   display: grid;
@@ -57,13 +87,12 @@
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  background-color: rgba(206, 200, 212, 0.5);
+  background-color: rgb(185, 185, 175);
   padding:20px;
   border-radius: 10px;
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 1.2rem;
-  /* min-width: 200px;
-  min-height: 20px; */
+  border: 2px solid #065320;
 }
 
 
@@ -79,7 +108,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  justify-content: center;
+  justify-content: start;
 }
 
 
@@ -95,7 +124,7 @@ select {
 
 
 .instructions {
-  text-align: center;
+  text-align: start;
   font-size: 1.5vw;
   line-height: 1.5;
 }
@@ -106,8 +135,6 @@ select {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  width: 100%; /* 設置 iframe 寬度為容器的100% */
-  height: 400px; /* 設置 iframe 高度為400像素，您可以根據需要調整這個值 */
 }
 
 /*回到頁首*/
@@ -138,4 +165,42 @@ select {
     /* 按鈕點擊效果 */
     button:active {
       background-color: #207c23; /* 點擊時的背景顏色 */
+    }
+
+    /* 網頁最底下 */
+    .footer {
+      margin-top: 20px;
+      background-color: #fbf9ff;
+      padding: 5px;
+      text-align: center;
+    }
+    
+    .info {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    
+    .info-message {
+      margin: 10px;
+      font-size: 18px;
+      color: #1f4b06;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .from::before {
+      content: "🌿"; 
+      margin-right: 10px;
+    }
+    
+    .info-message a {
+      color: #064b23;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+    
+    .info-message a:hover {
+      color: #b32a00;
     }
