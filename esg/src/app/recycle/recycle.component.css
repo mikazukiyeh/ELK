@@ -54,6 +54,7 @@
   padding: 20px; /* 設定內邊距，可根據需求自行調整 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
   margin: 20px;
+  display: flex;
 }
 
 /* 將 iframe 置中 */
