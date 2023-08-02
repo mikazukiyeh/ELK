@@ -48,11 +48,19 @@
   }
 }
 
+.wrapper {
+  background-color: #ffffff; /* 白色底色 */
+  border-radius: 10px; /* 圓角 */
+  padding: 20px; /* 設定內邊距，可根據需求自行調整 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
+  margin: 20px;
+}
+
 /* 圖片輪播 */
 .img-container{
   background-color: #cfd4eeb4;
   padding: 20px;
-  margin: 0 100px;
+  margin: 0 60px;
   border-radius: 20px;
 }
 
@@ -83,16 +91,14 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 20px 20vw;
+  margin: 20px 10vw;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  background-color: rgb(185, 185, 175);
   padding:20px;
   border-radius: 10px;
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 1.2rem;
-  border: 2px solid #065320;
 }
 
 
@@ -108,7 +114,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  justify-content: start;
+  justify-content: center;
 }
 
 
