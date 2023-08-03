@@ -152,8 +152,8 @@
   padding: 20px;
   display: flex;
   justify-content: center;
+  max-width: 100%;
   margin: 0 auto;
-  border-radius: 30px;
 }
 
 /* 摘要部分 */
