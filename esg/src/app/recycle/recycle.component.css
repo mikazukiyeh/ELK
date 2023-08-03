@@ -53,21 +53,156 @@
   border-radius: 10px; /* 圓角 */
   padding: 20px; /* 設定內邊距，可根據需求自行調整 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
-  margin: 20px;
+  margin: 30px;
   display: flex;
+  flex-wrap: wrap;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.6;
 }
 
-/* 將 iframe 置中 */
+/* 第一段描述 */
+
+.illustrate {
+  margin-bottom: 20px;
+}
+
 .container {
-  font-family: "cwTeXYen", sans-serif;
-  line-height: 1.6;
+  text-align: justify;
+  border: 2px solid rgb(92, 54, 5);
+  border-radius: 20px;
+  padding: 0 40px;
+  margin: 20px 60px;
+}
+
+
+.illustrate p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #064b23;
+  font-size: 1.8vw;
+}
+
+.illustrate ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  color: #328231;
+  font-size: 1.5vw;
+}
+
+.illustrate li {
+  margin-bottom: 5px;
+}
+
+
+.illustrate img {
+  max-width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* 焚化率及回收的部分 */
+.incineration {
+  text-align: justify;
+  border: 2px solid rgb(92, 54, 5);
+  border-radius: 20px;
+  padding: 0 40px;
+  margin: 20px 60px;
+}
+.incineration p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #064b23;
+  font-size: 1.8vw;
+}
+
+.incineration ol {
+  counter-reset: item;
+  padding-left: 20px;
+  color: #328231;
+  font-size: 1.5vw;
+}
+
+.incineration li {
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.incineration ol li {
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.incineration ol li::before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+
+/* 將 iframe 置中 */
+.iframe-page {
   padding: 20px;
   display: flex;
   justify-content: center;
-  margin: 20px 100px;
+  margin: 0 auto;
   border-radius: 30px;
 }
 
+/* 摘要部分 */
+
+.Summarize{
+  text-align: justify;
+  border: 2px solid rgb(92, 54, 5);
+  border-radius: 20px;
+  padding: 0 40px;
+  margin: 20px 60px;
+}
+
+.Summarize p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #064b23;
+  font-size: 1.8vw;
+}
+
+.Summarize ol {
+  counter-reset: item;
+  padding-left: 20px;
+  color: #328231;
+  font-size: 1.5vw;
+}
+
+.Summarize ol li {
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+
+.Summarize ol li::before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+.feelings p {
+  margin-bottom: 10px;
+}
+
+.iframe-page {
+  text-align: center;
+}
 
 
 
@@ -127,4 +262,16 @@
 .from::before {
   content: "♻️"; 
   margin-right: 10px;
+}
+
+.info-message a {
+  color: #064b23;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.info-message a:hover {
+  color: #b32a00;
 }
