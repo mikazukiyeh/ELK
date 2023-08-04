@@ -3,11 +3,13 @@
 </div>
 <div class="wrapper">
     <div class="container">
-        <div class="city-buttons">
-            <!-- 使用 *ngFor 循环来创建按钮 -->
-            <button *ngFor="let city of cities" (click)="loadCity(city)">{{ city }}</button>
-          </div>
-          <iframe [src]="iframeUrl" height="600" width="800"></iframe>
+      <div *ngFor="let city of cities; let i = index">
+        <button (click)="selectedCity = city">{{ city.name }}</button>
+      </div>
+      <div *ngIf="selectedCity">
+        <h3>{{ selectedCity.name }}</h3>
+        <iframe [src]="selectedCity.iframeUrl" height="600" width="800"></iframe>
+      </div>
     </div>
 </div>
 
