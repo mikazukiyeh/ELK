@@ -3,9 +3,11 @@
 </div>
 <div class="wrapper">
     <div class="container">
-        <div class="iframe-page">
-            <!-- 嵌入的Iframe -->
-        </div>
+        <div class="city-buttons">
+            <!-- 使用 *ngFor 循环来创建按钮 -->
+            <button *ngFor="let city of cities" (click)="loadCity(city)">{{ city }}</button>
+          </div>
+          <iframe [src]="iframeUrl" height="600" width="800"></iframe>
     </div>
 </div>
 
