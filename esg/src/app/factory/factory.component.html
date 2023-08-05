@@ -4,12 +4,11 @@
 <div class="wrapper">
     <div class="container">
       <div *ngFor="let city of cities; let i = index">
-        <button (click)="selectedCity = city">{{ city.name }}</button>
+        <button  (click)="setSelectedCity(city)">{{ city.name }}</button>
       </div>
       <div *ngIf="selectedCity">
         <h3>{{ selectedCity.name }}</h3>
-        <iframe [src]="sanitizedIframeUrl" height="600" width="800"></iframe>
-      </div>
+        <iframe [src]="srcUrl" height="600" width="800"></iframe>
     </div>
 </div>
 
