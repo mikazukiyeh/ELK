@@ -2,15 +2,42 @@
     <div class="title">各縣市工廠環境監控與汙染管制</div>
 </div>
 <div class="wrapper">
-    <div class="container">
-      <div *ngFor="let city of cities; let i = index">
+  <div class="EMS">
+  <h2>關於「環境保護許可管理資訊系統」</h2>
+  <p>依據本國各級環保機關為了掌握轄區內各種依法規定為汙染廢氣、廢水、廢棄物、各項環境汙染物，針對轄區內的物件環境進行監測、調查、系統化的管理。業者如若有排放或處理以上管制類汙染物的必要，則必須向各級環保機關申請相關許可證，並按時進行申報流程。</p>
+  <p>因為各類管制物品通常是不同單位業務，並且各自建立不同的管制系統，部分許可管制資料相同(如事業名稱、地址、負責人等資料)， 卻需於不同管制系統重複輸入，除浪費人力外，且因輸入時間點不同，易造成各管制系統間管制資料不一致；以及各管制系統資料未建立關聯性，對資料作連動性管理，無法充分運用 相互勾稽比對的問題。</p>
+  <p>於101年8月環保署整合了空、水、廢、毒管理資訊系統(EMS)，讓業者可以透過單一入口網站即可確認許可基線資料、辦理各項許可證之換證及申請作業。 申請資訊及相關工廠資料也會因應法規要求開放部分資料供查詢，但當污染源資料列管類別(空污、水污、廢棄物、毒化物)全部解列時，將不再顯示該筆資料。
+    </p>
+  </div>
+  <div class="container">
+    <p>目前各縣市有申報各列管物的事業類別分析圖</p>
+    <div class="btn-container">
+      <div class="btn-row" *ngFor="let city of cities; let i = index">
         <button  (click)="setSelectedCity(city)">{{ city.name }}</button>
       </div>
-      <div *ngIf="selectedCity">
-        <h3>{{ selectedCity.name }}</h3>
-        <iframe [src]="srcUrl" height="600" width="800"></iframe>
-        </div>>
     </div>
+    <div class="iframe-page" *ngIf="selectedCity">
+      <h3>{{ selectedCity.name }}</h3>
+      <iframe [src]="srcUrl" height="600" width="1300"></iframe>
+    </div>
+    <div class="illustrate">
+      <p>在各縣市中，廢棄物列管名單占最大宗。這些跟一般廢棄物有什麼不一樣呢？為什麼需要申報？</p>
+      <p>根據法規「廢棄物清理法」定義: 事業廢棄物：指事業活動產生非屬其員工生活產生之廢棄物，包括有害事業廢棄物及一般事業廢棄物。</p>
+      <ol>
+        <li>有害事業廢棄物：由事業所產生具有毒性、危險性，其濃度或數量
+          足以影響人體健康或污染環境之廢棄物。</li>
+        <li>一般事業廢棄物：由事業所產生有害事業廢棄物以外之廢棄物。</li>
+      </ol>
+      <p>而這裡所指的廢棄物列管:
+        依據廢棄物清理法第31條第1項第1款及第2款規定，經中央主管機關指定公告一定規模之事業，應於公告之一定期限辦理事業廢棄物清理計畫書及網路申報事業廢棄物清理流向。</p>
+      <p>但不管是哪種汙染源列管，事業主都必須定期上網申報列管汙染源的產出量及清理流向是否合理及合法，系統整合應該帶來便民跟即時資料正確性，以利於管制及稽核。</p>
+      <p>可是從開放資料中卻發現很多地區的公司並沒有正確填寫行業別，從分析圖中可以看見其他類別佔大宗，點開圓餅圖可以看見公司名稱並不是無法分辨的行業。</p>
+      <p>這點在公開查詢的「列管污染源資料 (含裁處資訊) 查詢系統」網站中，查詢公司名稱會發現也是暫無分類。</p>
+      <p>可是依照網站的使用方法及申報流程。企業主應該主動提供完整資訊。對於公開資料我們是否可以進行反應及討論。</p>
+      <img src="../../assets/醫院類別畫面.png" alt="範例說明" title="查詢範例說明">
+      <img src="../../assets/查詢網站截圖畫面.png" alt="範例說明" title="範例說明">
+    </div>
+  </div>
 </div>
 
 <div> 
@@ -23,6 +50,15 @@
     <div class="info">
       <div class="info-message">
         <span class="from"> 資料來源：</span>
+        <a href="https://prtr.epa.gov.tw/index.html" target="_blank">列管污染源資料 (含裁處資訊) 查詢系統</a>
+      </div>
+      <div class="info-message">
+        <a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=O0050001&kw=%e5%bb%a2%e6%a3%84%e7%89%a9%e6%b8%85%e7%90%86%e6%b3%95" target="_blank">全國法規資料庫
+        </a>
+      </div>
+      <div class="info-message">
+        <a href="https://ems.epa.gov.tw/Anonymous/EMSNewsMore.aspx" target="_blank">環境保護許可管理資訊系統
+        </a>
       </div>
     </div>
 </footer>
