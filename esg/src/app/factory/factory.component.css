@@ -70,14 +70,14 @@
   font-weight: bold;
 }
 
-.EMS h2{
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-bottom: 40px;
-  color: #5a9638;
+.EMS img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
+
 .EMS p {
-  margin-bottom: 15px;
+  margin: 15px 60px;
 }
 
 /* 調整段落的首行縮進 */
