@@ -110,11 +110,12 @@
 }
 
 .EMS {
-  margin: 0 auto;
-  padding: 20px 60px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   color: #064b23;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 1.8vw;
   font-weight: bold;
 }
@@ -126,7 +127,7 @@
 }
 
 .EMS p {
-  margin: 15px 60px;
+  margin-bottom: 10px;
 }
 
 /* 調整段落的首行縮進 */
@@ -134,13 +135,6 @@
   text-indent: 2em;
 }
 
-/* 高亮引用的段落 */
-.EMS blockquote {
-  background-color: #f0f0f0;
-  padding: 10px 15px;
-  border-left: 4px solid #8bd648;
-  margin: 0;
-}
 
 /* 調整引用段落中的文字 */
 .EMS blockquote p {
@@ -208,6 +202,16 @@ button:hover {
   align-items: center;
 }
 
+/* 媒體查詢 */
+@media (max-width: 600px) {
+  /* 視窗寬度小於600px時，設定container的最大寬度 */
+
+  .iframe-page iframe {
+    width: 100%; 
+    height: 100%; 
+  }
+}
+
 h3 {
   display: inline-block;
   background-color: #8bd648;
@@ -254,13 +258,7 @@ iframe{
 
 /* 煙囪監測 */
 .CEMS {
-  margin: 0 auto;
-  padding: 20px 60px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   color: #064b23;
-  font-size: 1.8vw;
-  font-weight: bold;
 }
 
 .CEMS img{
@@ -269,22 +267,12 @@ iframe{
   margin: 0 auto;
 }
 
-.CEMS p {
-  margin: 15px 60px;
-}
 
 /* 調整段落的首行縮進 */
 .CEMS p:first-of-type {
   text-indent: 2em;
 }
 
-/* 高亮引用的段落 */
-.CEMS blockquote {
-  background-color: #f0f0f0;
-  padding: 10px 15px;
-  border-left: 4px solid #8bd648;
-  margin: 0;
-}
 
 /* 調整引用段落中的文字 */
 .CEMS blockquote p {
@@ -377,4 +365,13 @@ iframe{
 
 .info-message a:hover {
   color: #b32a00;
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 768px) {
+
+  .info {
+    flex-direction: column;
+  }
+
 }

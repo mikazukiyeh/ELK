@@ -29,12 +29,12 @@
 @media (max-width: 600px) {
   /* 視窗寬度小於600px時，設定container的最大寬度 */
 
-  .iframe-page {
+  .container {
     width: 400px; 
     height: 300px; 
   }
 
-  .iframe-page iframe {
+  .container iframe {
     width: 100%; /* 讓iframe在較小的螢幕上縮小 */
     height: 100%; /* 讓iframe在較小的螢幕上縮小 */
   }
