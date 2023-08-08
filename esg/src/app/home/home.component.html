@@ -1,5 +1,14 @@
 
-<header>  
+<header>
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li><a href="#main">何謂ESG</a>
+      </li>
+      <li>
+        <a href="#about">關於合作夥伴</a>
+      </li>
+    </ul>
+  </nav>
   <div class="head_title">
     <div class="welcome-font">
     <span class="welcome">W E L C O M E</span>
@@ -9,7 +18,7 @@
   </div>
 </header>
 <main>
-  <div class="container">
+  <div class="container" id="main">
     <div class="about-esg">
       <img class="esgimg" src="../../assets/aboutESG.png" alt="ESG" title="aboutESG">
     </div>
@@ -27,6 +36,36 @@
       <div class="main-list" >
         <app-mainitem *ngFor="let image of images" [path]="image.path" [title]="image.title" [linkrouter]="image.linkrouter"></app-mainitem>
       </div>
+    </div>
+  </div>
+  <div class="interview" id="about">
+    <div class="picturecontainer">
+      <div class="people"><span class="people-icon">🌟</span>關於合作夥伴</div>
+      <div class="picture-with-name">
+        <div class="picture"></div>
+        <p class="name">Catalina</p>
+      </div>
+      <div class="picture-with-name">
+        <div class="picture"></div>
+        <p class="name">Winnie</p>
+      </div>
+      <div class="picture-with-name">
+        <div class="picture"></div>
+        <p class="name">Selina</p>
+      </div>
+      <div class="picture-with-name">
+        <div class="picture"></div>
+        <p class="name">Flion</p>
+      </div>
+      <div class="picture-with-name">
+        <div class="picture"></div>
+        <p class="name">Luna</p>
+      </div>
+    </div>
+    <div class="think">
+      <h2><span class="idea-icon">💡</span> 關於我們的想法:</h2>
+      <p>本專案旨在建立一個綠色生活資訊整合平台，提供大眾方便地獲取與環保議題相關的資訊，鼓勵使用者以環保意識作為行動的基礎。平台從使用者角度出發，發想使用者會對哪些生活資訊有興趣了解，進而使用ELK平台，爬蟲、公開資訊排程抓取，資料，並做出網站
+      </p>
     </div>
   </div>
 </main>

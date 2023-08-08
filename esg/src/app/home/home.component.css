@@ -10,6 +10,46 @@ header {
     position: relative; /* 讓 header 成為相對定位的容器 */
 }
 
+#navbar {
+  background-color: #093916;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 40px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin:0 40px 0 0;
+  justify-content: end;
+}
+
+.nav-list li {
+  margin-right: 20px;
+  margin-top: 16px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1.5vw;
+}
+
+.nav-list a:hover {
+  color: #ff9d00;
+}
+
 
 .head_title {
     display: flex;
@@ -126,7 +166,7 @@ main {
   line-height: 1.5; 
   color: #105503; 
   text-align: left;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 26px;
   margin-top: 5px;
 
@@ -154,6 +194,7 @@ main {
   } 
 
   .main-title h2 {
+    font-weight: bold;
     margin-top: 0;
     font-size: 3vw;
   }
@@ -207,6 +248,122 @@ main {
     transition: transform 0.3s ease; /* 添加過渡效果 */ 
   }
 }
+
+/* 介紹團隊 */
+.interview {
+  background: linear-gradient(360deg, rgb(176, 219, 250), rgb(255, 255, 255));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.picturecontainer,
+.think {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.picturecontainer {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:2vw;
+  padding: 20px;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 100%;
+  position: relative;
+  font-family: 'Noto Sans TC', sans-serif; 
+  line-height: 1.5; 
+  color: #105503; 
+  text-align: left;
+  font-size: 3vw;
+  margin-top: 20px;
+
+  .people-icon {
+    margin-right: 5px; 
+  }
+}
+
+.picture-with-name {
+  text-align: center;
+  position: relative; 
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #2e762e;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.picture-with-name:hover .name {
+  opacity: 1;
+}
+
+.picture {
+  width: 160px;
+  height: 160px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+
+.think {
+  font-family: 'Noto Sans TC', sans-serif; 
+  line-height: 1.5; 
+  color: #105503; 
+  text-align: left;
+  font-size: 26px;
+  margin-top: 20px;
+
+  .idea-icon {
+    margin-right: 5px; 
+  }
+}
+
+.think h2 {
+  margin-top: 0;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .interview {
+    flex-direction: column; /* 在螢幕小於 768px 時，將容器改為垂直堆疊排列 */
+  }
+
+  .picturecontainer,
+  .think {
+    max-width: 100%; /* 在螢幕小於 768px 時，將兩個元素的寬度設為 100% */
+    height: auto; /* 自動適應內容高度 */
+  }
+
+  .think {
+    font-size: 14px; 
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .think {
+    font-size: 14px; 
+  }
+
+}
+
 
 /* 頁尾樣式 */
 
