@@ -15,8 +15,27 @@
             <p>環保署統計資料顯示，全台一般廢棄物總量前（2020）年達到990萬噸，創下新高，去（2021）年則再次超越，來到1006萬2344噸。 平均每人每年約產生20.6公斤的廚餘，以及428.5公斤的垃圾。</p>
             <p>這裡提供三年，各縣市垃圾一般廢棄物產生量(公噸)，可以比較資源廢棄物量與垃圾廢棄物量到2022年還在攀升，但資源廢棄物量較多。</p>
         </div>
-        <div class="three-years">
-            <img src="../../assets/三年廢棄物總量比較.png" alt="三年廢棄物比較圖" title="三年廢棄物總量比較表">
+        <div class="chart-container">
+            <div class="total">
+                <div class="chart">
+                    <canvas id="chartCanvas1" width="400" height="300"></canvas>
+                    <p>三年全台灣產生廢棄物總量</p>
+                </div>
+            </div>
+            <div class="threeyears">
+                <div class="chart">
+                    <canvas id="chartCanvas2" width="400" height="300"></canvas>
+                    <p>三年全台灣產生回收類總量</p>
+                </div>
+                <div class="chart">
+                    <canvas id="chartCanvas3" width="400" height="300"></canvas>
+                    <p>三年全台灣產生一般垃圾總量</p>
+                </div>
+                <div class="chart">
+                    <canvas id="chartCanvas4" width="400" height="300"></canvas>
+                    <p>三年全台灣產生廚餘總量</p>
+                </div>
+            </div>
         </div>
         <div class="incineration">
             <p>再以下圖分析2022年累計各縣市環保資料中的焚化率以及回收使用率可以得到以下一些觀察:</p>
@@ -49,6 +68,17 @@
             <p>各縣市傳出重啟或興建焚化爐，但已經破千萬噸的廢棄物累積量、掩埋場堆放垃圾問題、焚化廠效能問題、跟環境及民生問題。真的是重啟或重建焚化廠就可以解決的嗎？由2022年資源廢棄物量來看，更多的是回收能量跟垃圾減量政策的不足，目前依據雙北經驗，實施隨袋徵收後台北市垃圾減量2/3、新北市減量1/2，雙北之外很多民眾也支持這種做法。</p>
         </div>
     </div>
+    <div class="iframe-page">
+        <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards#/view/b4eb6120-3130-11ee-a364-3102a6bc5805?embed=true&_g=(filters%3A!())&show-time-filter=true&hide-filter-bar=true" height="600" width="1300"></iframe>
+    </div>
+    <div class="Summarize">
+        <p>一般廢棄物中還有一種經常被忽視的一項可再利用的資源，廚餘廢棄物。</p>
+        <p>在下圖中分析可以看見各縣市每人一日平均垃圾量，細看金門縣為何平均一人產生垃圾較少，但金門縣的廢棄物回收率如此之高？</p>
+        <p>原來是在自2017年起，金門縣實施垃圾進廠檢查以及破袋查核，在縣政府的把關之下，不但廢棄物回收率高達73%~74%為全國之高。</p>
+        <p>更令人注意的是新聞報導中說明金門縣政府的一般廢棄物中的廚餘含量為全國最低。以此分析圖來看金門縣每年回收的廚餘量高達9%</p>
+        <p>連江縣政府也不惶多讓，在廚餘方面的政策成效也非常顯著，相比其他縣市大量的廚餘可能都隨著一般廢棄物進入掩埋場及焚化廠，可謂資源的浪費。</p>
+    </div>
+
 </div>
 <div> 
     <!-- 回到首頁的按鈕，使用 Angular 的路由導航回首頁 -->
