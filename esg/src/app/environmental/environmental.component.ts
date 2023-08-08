@@ -18,7 +18,7 @@ export class EnvironmentalComponent implements OnInit {
     // 自動輪播切換
     setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
-    }, 6000); // 每 6 秒切換一張圖片
+    }, 4000); // 每 6 秒切換一張圖片
   }
 
   // 回到首頁，使用 Angular 的路由導航

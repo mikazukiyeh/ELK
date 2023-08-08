@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { cities, city } from '../city';
 import { DomSanitizer} from '@angular/platform-browser';
 
-
 @Component({
   selector: 'app-factory',
   templateUrl: './factory.component.html',

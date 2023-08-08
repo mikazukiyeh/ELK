@@ -16,6 +16,7 @@ import { RecycleComponent } from './recycle/recycle.component';
 import { EnvironmentalComponent } from './environmental/environmental.component';
 import { FactoryComponent } from './factory/factory.component';
 import { FormsModule } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule
   
   ],
   providers: [],

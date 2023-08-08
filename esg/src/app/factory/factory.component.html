@@ -2,11 +2,22 @@
     <div class="title">各縣市工廠環境監控與汙染管制</div>
 </div>
 <div class="tab">
-  <img src="../../assets/環境許可管理資訊系統.png" alt="環境管理資訊系統" title="EMS">
+  <mat-tab-group>
+    <mat-tab label="EMS">
+      <ng-template matTabContent>
+        <img src="../../assets/環境許可管理資訊系統.png" alt="EMS" title="EMS">
+      </ng-template>
+    </mat-tab>
+    <mat-tab label="CEMS">
+      <ng-template matTabContent>
+        <img src="../../assets/CEMS.png" alt="CEMS監測介紹" title="CEMS監測介紹">
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
 </div>
 <div class="wrapper">
   <div class="EMS">
-  <p>於101年8月環保署整合了空、水、廢、毒管理資訊系統(EMS)，讓業者可以透過單一入口網站即可確認許可基線資料、辦理各項許可證之換證及申請作業。 申請資訊及相關工廠資料也會因應法規要求開放部分資料供查詢，但當污染源資料列管類別(空污、水污、廢棄物、毒化物)全部解列時，將不再顯示該筆資料。
+    <p>於101年8月環保署整合了空、水、廢、毒管理資訊系統，統稱為環境保護許可管理資訊系統(EMS)，讓業者可以透過單一入口網站即可確認許可基線資料、辦理各項許可證之換證及申請作業。 申請資訊及相關工廠資料也會因應法規要求開放部分資料供查詢，但當污染源資料列管類別(空污、水污、廢棄物、毒化物)全部解列時，將不再顯示該筆資料。
     </p>
     <img src="../../assets/整合EMS.png" alt="環境管理資訊系統" title="EMS">
   </div>
@@ -39,6 +50,25 @@
       <img src="../../assets/查詢網站截圖畫面.png" alt="範例說明" title="範例說明">
     </div>
   </div>
+  <div class="container">
+    <p>
+    除了以上的EMS系統，在我們看不見的地方管制著各項環境汙染源。但五大污染源的來源最能直接干擾民眾生活品質的廢氣汙染管制是否有更加即時的監測管控呢？
+    </p>
+    <div class="CEMS">
+      <p>為有效管理大型煙囪之空氣污染物排放狀況，環保署自民國82年起，共公告5批次應設置連續自動監測設施(Continuous Emission Monitoring Systems, CEMS)之固定污染源，並要求自91年2月起分批次與環保局完成連線作業。</p>
+      <p>連續自動監測設施(CEMS)：可連續自動採樣、分析、記錄與計算固定污染源排放管道空氣污染物之相關設施。約可掌握全國固定污染源7成以上硫氧化物及氮氧化物排放量</p>
+      <p>介紹如下:</p>
+      <img src="../../assets/CEMS監測介紹.png" alt="">
+      <p>這裡我們整理了公開資料中關於各縣市煙囪排放氣體中「粒狀污染物不透光率」6分鐘監測即時資料。可以隨時監看是否排放超標情形</p>
+      <div class="iframe-page">
+        <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards#/view/3f94dda0-2c5f-11ee-afac-f7bcffaa2a37?embed=true&_g=(filters%3A!())&show-time-filter=true&hide-filter-bar=true" height="600" width="1300"></iframe>
+      </div>
+      <p>另外環保署也建置CEMS監測數據逾限示警系統與數據管理平台，可即時通知各地方環保局其轄內公私場所CEMS監測數據逾限情形與相關數據檢核資料。</p>
+      <p>但這筆資料曾經在2023年7月31日中斷更新許久，令人不免有點擔心是否真的有即時示警系統，可以馬上通知各地環保局警示。</p>
+      <p>而全台煙囪最多的高雄市，排放量佔了全國的74%，高雄市政府也為了因應CEMS做了一個即時監控網頁可以參考 : <a href="https://aqmc.kcg.gov.tw/pubCems/CEMSData.aspx" target="_blank">空氣品質管理中心</a>。
+      </p>
+    </div>
+  </div>
 </div>
 
 <div> 
@@ -59,6 +89,14 @@
       </div>
       <div class="info-message">
         <a href="https://ems.epa.gov.tw/Anonymous/EMSNewsMore.aspx" target="_blank">環境保護許可管理資訊系統
+        </a>
+      </div>
+      <div class="info-message">
+        <a href="https://air.epa.gov.tw/EnvTopics/StationarySource_9.aspx" target="_blank">CEMS政策推動
+        </a>
+      </div>
+      <div class="info-message">
+        <a href="http://nehrc.nhri.org.tw/toxic/ref/%E6%87%B6%E4%BA%BA%E5%8C%85_v3-rev2.pdf" target="_blank">空汙懶人包
         </a>
       </div>
     </div>

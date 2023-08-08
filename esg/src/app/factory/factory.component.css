@@ -48,8 +48,11 @@
   }
 }
 
-
+/* tab圖表樣式 */
 .tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff; 
   border-radius: 10px; 
   padding: 20px; 
@@ -57,11 +60,43 @@
   margin: 20px;
 }
 
-.tab img{
-  max-width: 60%;
-  display: block;
-  margin: 0 auto;
+.mat-tab-group {
+  width: 70%; /* 調整 Tab Group 寬度 */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* 調整 Tab 標籤的樣式 */
+.mat-tab-label {
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0 0;
+  flex-grow: 1; /* 讓 Tab 標籤均等分寬度 */
+}
+
+/* 調整選中的 Tab 標籤的樣式 */
+.mat-tab-label.mat-tab-label-active {
+  background-color: #ffffff;
+}
+
+/* 調整 Tab 內容的樣式 */
+.mat-tab-body-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 調整圖片的樣式 */
+.mat-tab-body-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
 /* 主要內容畫面 */
 
 .wrapper {
@@ -217,6 +252,62 @@ iframe{
   height: auto;
 }
 
+/* 煙囪監測 */
+.CEMS {
+  margin: 0 auto;
+  padding: 20px 60px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: #064b23;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.CEMS img{
+  max-width: 85%;
+  display: block;
+  margin: 0 auto;
+}
+
+.CEMS p {
+  margin: 15px 60px;
+}
+
+/* 調整段落的首行縮進 */
+.CEMS p:first-of-type {
+  text-indent: 2em;
+}
+
+/* 高亮引用的段落 */
+.CEMS blockquote {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  border-left: 4px solid #8bd648;
+  margin: 0;
+}
+
+/* 調整引用段落中的文字 */
+.CEMS blockquote p {
+  margin: 0;
+}
+
+/* 調整對齊 */
+.CEMS p, .EMS blockquote {
+  text-align: justify;
+}
+
+/* 添加間距以隔開段落 */
+.CEMS p + p, .EMS blockquote + p {
+  margin-top: 15px;
+}
+
+.CEMS a{
+  text-decoration: none;
+}
+
+.CEMS a:hover {
+  color: #b32a00;
+}
 
 
 /* 回到首頁標記 */
