@@ -65,6 +65,10 @@
   font-weight: bold;
 }
 
+.chart-title{
+  display: flex;
+  justify-self: start;
+}
 
 .total {
   display: flex;
@@ -113,6 +117,9 @@ canvas {
   flex-wrap: wrap;
   font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.6;
+  color: #328231;
+  font-weight: bold;
+  font-size: 1.6vw;
 }
 
 /* 第一段描述 */
@@ -120,6 +127,9 @@ canvas {
 .illustrate {
   margin-bottom: 20px;
   max-width: 100%;
+  color: #328231;
+  font-weight: bold;
+  font-size: 1.6vw;
 }
 
 .container {
@@ -127,6 +137,7 @@ canvas {
   border-radius: 20px;
   padding: 0 40px;
   margin: 20px 60px;
+  color: #064b23;
 }
 
 

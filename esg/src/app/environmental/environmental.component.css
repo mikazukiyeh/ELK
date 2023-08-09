@@ -54,6 +54,9 @@
   padding: 20px; /* 設定內邊距，可根據需求自行調整 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
   margin: 20px;
+  color: #328231;
+  font-weight: bold;
+  font-size: 1.6vw;
 }
 
 
@@ -148,21 +151,26 @@ select {
 
 .mat-tab-group {
   width: 100%; /* 調整 Tab Group 寬度 */
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 調整 Tab 標籤的樣式 */
-.mat-tab-label {
-  background-color: #f0f0f0;
+
+/* .mat-tab-label {
   border-radius: 10px 10px 0 0;
-  flex-grow: 1; /* 讓 Tab 標籤均等分寬度 */
+  flex-grow: 1;
+} */
+
+.mdc-tab__text-label {
+  color: #110c74;
+  background-color: #f0f0f0;
+  flex-grow: 1;
 }
 
-/* 調整選中的 Tab 標籤的樣式 */
-.mat-tab-label.mat-tab-label-active {
-  background-color: #ffffff;
+
+.mdc-tab__text-label.mat-tab-label-active {
+  color: #35982c ;
 }
 
 /* 調整 Tab 內容的樣式 */
@@ -171,6 +179,7 @@ select {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  color: #064b23;
 }
 
 /* 調整圖片的樣式 */

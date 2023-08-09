@@ -18,7 +18,6 @@
     </select>
       </div>
   </div>
-
   <div class="container">
     <ng-container *ngIf="selectedOption === 'hotel'">
       <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards#/view/dd1c1bc0-2c40-11ee-afac-f7bcffaa2a37?embed=true&_g=(filters%3A!())" height="600" width="1440"></iframe>
@@ -35,22 +34,22 @@
   <div class="icon"><span class="star-icon">🌟</span>認識環保標章</div>
   <div class="tab">
     <mat-tab-group>
-      <mat-tab label="綠色餐廳標章">
+      <mat-tab label="綠色餐廳標章" class="custom-tab-label" >
         <ng-template matTabContent>
-          <img src="../../assets/綠色餐廳標章.png" alt="綠色餐廳" title="綠色餐廳">
+          <img src="../../assets/綠色餐廳標章.png" alt="綠色餐廳" title="綠色餐廳" >
         </ng-template>
       </mat-tab>
-      <mat-tab label="綠色宣言">
+      <mat-tab label="綠色宣言" class="custom-tab-label" >
         <ng-template matTabContent>
           <img src="../../assets/綠色宣言.png" alt="綠色宣言" title="綠色宣言">
         </ng-template>
       </mat-tab>
-      <mat-tab label="環保旅館">
+      <mat-tab label="環保旅館" class="custom-tab-label" >
         <ng-template matTabContent>
           <img src="../../assets/環保旅館.png" alt="環保旅館" title="環保旅館">
         </ng-template>
       </mat-tab>
-      <mat-tab label="環保旅店">
+      <mat-tab label="環保旅店" class="custom-tab-label" >
         <ng-template matTabContent>
           <img src="../../assets/環保旅店.png" alt="環保旅店" title="環保旅店">
         </ng-template>
