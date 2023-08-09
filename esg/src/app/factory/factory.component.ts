@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { cities, city } from '../city';
 import { DomSanitizer} from '@angular/platform-browser';
+import { factories,factory } from '../factory'
 
 @Component({
   selector: 'app-factory',
@@ -19,6 +20,14 @@ export class FactoryComponent {
   @Input() iframeUrl: string = '';
  
 
+  factories = factories;
+  selectedFactory: factory | null = null;
+  SrcUrl: any;
+
+  @Input() factory: string = '';
+  @Input() IframeUrl: string = '';
+
+
   constructor(private router: Router, private sanitizer:DomSanitizer ) { }
 
   navigateToHome(): void {
@@ -30,7 +39,10 @@ export class FactoryComponent {
     this.srcUrl = city ? this.sanitizer.bypassSecurityTrustResourceUrl(city.iframeUrl) : null;
   }
 
-  // ngOnInit(){
-  //   this.srcUrl = this.sanitizer. bypassSecurityTrustResourceUrl(this.iframeUrl)
-  // }
+  setselectedFactory(factory: factory | null): void {
+    this.selectedFactory = factory;
+    this.SrcUrl = factory ? this.sanitizer.bypassSecurityTrustResourceUrl(factory.IframeUrl) : null;
+  }
+
+
 }

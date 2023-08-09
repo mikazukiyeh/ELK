@@ -2,7 +2,7 @@
     /* Add your background color or any other styling for the container if needed */
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .custom-button {
@@ -59,4 +59,8 @@
       width: 50px;
       height: 50px;
     }
+  }
+
+  .name{
+    color: black;
   }

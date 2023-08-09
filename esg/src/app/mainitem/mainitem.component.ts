@@ -8,9 +8,11 @@ import { Router } from '@angular/router';
 })
 export class MainitemComponent {
 
+
   @Input() path: string = '';
   @Input() title: string = '';
   @Input() linkrouter: string = '';
+  @Input() text: string = '';
 
   constructor(private router: Router) { }
 
