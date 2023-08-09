@@ -48,71 +48,6 @@
   }
 }
 
-/* tab圖表樣式 */
-.tab{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff; 
-  border-radius: 10px; 
-  padding: 20px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
-  margin: 20px;
-  max-width: 100%;
-}
-
-.mat-tab-group {
-  width: 100%; /* 調整 Tab Group 寬度 */
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* 調整 Tab 標籤的樣式 */
-.mat-tab-label {
-  background-color: #f0f0f0;
-  border-radius: 10px 10px 0 0;
-  flex-grow: 1; /* 讓 Tab 標籤均等分寬度 */
-}
-
-/* 調整選中的 Tab 標籤的樣式 */
-.mat-tab-label.mat-tab-label-active {
-  background-color: #ffffff;
-}
-
-/* 調整 Tab 內容的樣式 */
-.mat-tab-body-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* 調整圖片的樣式 */
-.mat-tab-body-content img {
-  max-width: 60%;
-  max-height: 60%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-img{
-  max-width: 100%;
-}
-
-
-@media screen and (max-width: 768px) {
-  .mat-tab-group {
-    width: 80%; 
-  }
-}
-
-
-.mat-tab-body-content img {
-  max-width: 100%; 
-  height: auto; 
-}
-
 
 /* 主要內容畫面 */
 
@@ -126,7 +61,7 @@ img{
   line-height: 1.6;
 }
 
-.EMS {
+/* .EMS {
   color: #064b23;
   background-color: #fff;
   margin-top: 20px;
@@ -147,26 +82,25 @@ img{
   margin-bottom: 10px;
 }
 
-/* 調整段落的首行縮進 */
+
 .EMS p:first-of-type {
   text-indent: 2em;
 }
 
 
-/* 調整引用段落中的文字 */
 .EMS blockquote p {
   margin: 0;
 }
 
-/* 調整對齊 */
+
 .EMS p, .EMS blockquote {
   text-align: justify;
 }
 
-/* 添加間距以隔開段落 */
+
 .EMS p + p, .EMS blockquote + p {
   margin-top: 15px;
-}
+} */
 
 
 .container {
@@ -183,7 +117,7 @@ img{
 .btn-container {
   display: flex;
   flex-wrap: wrap;
-  margin:0 50px 50px 20px;
+  margin-bottom:20px;
   justify-content: center;
   align-items: center;
 }
@@ -242,7 +176,7 @@ iframe{
   max-width: 100%;
 }
 
-.illustrate {
+/* .illustrate {
   margin-top: 20px;
   background-color: #f7f7f7;
   color: #064b23;
@@ -267,11 +201,11 @@ iframe{
 
 
 .illustrate img {
-  display: block; /* 讓圖片並排顯示 */
+  display: block; 
   margin: 5px auto;
-  max-width: 80%; /* 控制每張圖片的最大寬度 */
+  max-width: 80%; 
   height: auto;
-}
+} */
 
 /* 煙囪監測 */
 .CEMS {
@@ -306,13 +240,18 @@ iframe{
   margin-top: 15px;
 }
 
-.CEMS a{
+.star-icon{
+  margin-right: 5px;
+}
+.container a{
   text-decoration: none;
+  color: #064b23;
 }
 
-.CEMS a:hover {
+.container a:hover {
   color: #b32a00;
 }
+
 
 
 /* 回到首頁標記 */
