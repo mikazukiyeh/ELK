@@ -2,18 +2,13 @@
     <div class="title">環保標章</div>
 </div>
 <div class="wrapper">
-  <div class="img-container">
-    <div class="carousel">
-      <div class="slide" [ngStyle]="{'transform': 'translateX(' + (-currentIndex * 100) + '%)'}">
-        <div class="can" ><img src="../../assets/綠色餐廳標章.png" title="綠色餐廳"></div>
-        <div class="can" ><img src="../../assets/綠色宣言.png" title="綠色宣言"></div>
-        <div class="can" ><img src="../../assets/環保旅館.png" title="環保旅館"></div>
-        <div class="can" ><img src="../../assets/環保旅店.png" title="環保旅店是什麼"></div>
-      </div>
-    </div>
-  </div>
-
   <div class="select-container">
+    <div class="instructions">
+      <div>請由旁邊下拉選項可以看見目前在台灣</div>
+      <div *ngIf="selectedOption === 'hotel'">擁有環保標章旅館的分佈情形</div>
+      <div *ngIf="selectedOption === 'restaurant'">擁有環保標章餐廳的分佈情形</div>
+      <div *ngIf="selectedOption === 'restroom'">擁有環保標章廁所的分佈情形</div>
+    </div>
       <div class="input-container">
     <label for="options">請選擇項目：</label>
     <select id="options" [(ngModel)]="selectedOption" (change)="onOptionChange()">
@@ -22,13 +17,6 @@
       <option value="restroom">公廁</option>
     </select>
       </div>
-
-    <div class="instructions">
-      <span>透過政府公開資料整理後可以得知在全台灣</span>
-      <div *ngIf="selectedOption === 'hotel'">擁有環保標章旅館的分佈</div>
-      <div *ngIf="selectedOption === 'restaurant'">擁有環保標章餐廳的分佈</div>
-      <div *ngIf="selectedOption === 'restroom'">擁有環保標章廁所的分佈</div>
-    </div>
   </div>
 
   <div class="container">
@@ -43,6 +31,17 @@
     <ng-container *ngIf="selectedOption === 'restroom'">
       <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards#/view/26ab8590-2efe-11ee-afac-f7bcffaa2a37?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3A'2023-06-30T02%3A26%3A20.012Z'%2Cto%3Anow))" height="600" width="1440"></iframe>
     </ng-container>
+  </div>
+  <div class="icon"><span class="star-icon">🌟</span>認識環保標章</div>
+  <div class="img-container">
+    <div class="carousel">
+      <div class="slide" [ngStyle]="{'transform': 'translateX(' + (-currentIndex * 100) + '%)'}">
+        <div class="can" ><img src="../../assets/綠色餐廳標章.png" title="綠色餐廳"></div>
+        <div class="can" ><img src="../../assets/綠色宣言.png" title="綠色宣言"></div>
+        <div class="can" ><img src="../../assets/環保旅館.png" title="環保旅館"></div>
+        <div class="can" ><img src="../../assets/環保旅店.png" title="環保旅店是什麼"></div>
+      </div>
+    </div>
   </div>
 </div>
 

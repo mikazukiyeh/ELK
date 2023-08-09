@@ -56,34 +56,7 @@
   margin: 20px;
 }
 
-/* 圖片輪播 */
-.img-container{
-  background-color: #cfd4eeb4;
-  padding: 20px;
-  margin: 0 60px;
-  border-radius: 20px;
-}
 
-.carousel {
-  overflow: hidden;
-  width: 100%;
-  max-width: 80vw; /* 輪播容器的最大寬度 */
-  margin: 0 auto; /* 水平居中 */
-}
-
-.slide {
-  display: flex;
-  transition: transform 0.5s ease; /* 使用transform實現平滑過渡 */
-}
-
-.can {
-  flex: 0 0 50%;
-}
-
-.can img {
-  max-width: 100%;
-  height: auto;
-}
 
 
 /*選單佈局 */
@@ -152,6 +125,56 @@ select {
     width: 100%; 
     height: 100%; 
   }
+}
+
+
+/* 圖片輪播 */
+.img-container{
+  background-color: #cfd4eeb4;
+  padding: 20px;
+  margin: 20px 60px;
+  border-radius: 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 100%;
+  position: relative;
+  font-family: 'Noto Sans TC', sans-serif; 
+  line-height: 1.5; 
+  color: #105503; 
+  text-align: left;
+  font-size: 3vw;
+  margin-top: 20px;
+
+  .star-icon {
+    margin-right: 5px; 
+  }
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 80vw; /* 輪播容器的最大寬度 */
+  margin: 0 auto; /* 水平居中 */
+}
+
+.slide {
+  display: flex;
+  transition: transform 0.5s ease; /* 使用transform實現平滑過渡 */
+}
+
+.can {
+  flex: 0 0 50%;
+}
+
+.can img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*回到頁首*/
