@@ -133,12 +133,56 @@ select {
 }
 
 
-/* 圖片輪播 */
-.img-container{
-  background-color: #cfd4eeb4;
+/* tab圖表樣式 */
+.tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
+  margin: 20px;
+  max-width: 100%;
+}
+
+.mat-tab-group {
+  width: 100%; /* 調整 Tab Group 寬度 */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 調整 Tab 標籤的樣式 */
+.mat-tab-label {
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0 0;
+  flex-grow: 1; /* 讓 Tab 標籤均等分寬度 */
+}
+
+/* 調整選中的 Tab 標籤的樣式 */
+.mat-tab-label.mat-tab-label-active {
+  background-color: #ffffff;
+}
+
+/* 調整 Tab 內容的樣式 */
+.mat-tab-body-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  margin: 20px 60px;
-  border-radius: 20px;
+}
+
+/* 調整圖片的樣式 */
+.mat-tab-body-content img {
+  max-width: 60%;
+  max-height: 60%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img{
+  max-width: 100%;
 }
 
 .icon {
@@ -161,16 +205,26 @@ select {
   }
 }
 
+/* 圖片輪播 */
+/* .img-container{
+  background-color: #cfd4eeb4;
+  padding: 20px;
+  margin: 20px 60px;
+  border-radius: 20px;
+}
+
+
+
 .carousel {
   overflow: hidden;
   width: 100%;
-  max-width: 80vw; /* 輪播容器的最大寬度 */
-  margin: 0 auto; /* 水平居中 */
+  max-width: 80vw; 
+  margin: 0 auto; 
 }
 
 .slide {
   display: flex;
-  transition: transform 0.5s ease; /* 使用transform實現平滑過渡 */
+  transition: transform 0.5s ease; 
 }
 
 .can {
@@ -180,7 +234,7 @@ select {
 .can img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 /*回到頁首*/
 .back-to-home {

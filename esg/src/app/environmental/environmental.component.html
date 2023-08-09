@@ -33,7 +33,32 @@
     </ng-container>
   </div>
   <div class="icon"><span class="star-icon">🌟</span>認識環保標章</div>
-  <div class="img-container">
+  <div class="tab">
+    <mat-tab-group>
+      <mat-tab label="綠色餐廳標章">
+        <ng-template matTabContent>
+          <img src="../../assets/綠色餐廳標章.png" alt="綠色餐廳" title="綠色餐廳">
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="綠色宣言">
+        <ng-template matTabContent>
+          <img src="../../assets/綠色宣言.png" alt="綠色宣言" title="綠色宣言">
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="環保旅館">
+        <ng-template matTabContent>
+          <img src="../../assets/環保旅館.png" alt="環保旅館" title="環保旅館">
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="環保旅店">
+        <ng-template matTabContent>
+          <img src="../../assets/環保旅店.png" alt="環保旅店" title="環保旅店">
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+
+  <!-- <div class="img-container">
     <div class="carousel">
       <div class="slide" [ngStyle]="{'transform': 'translateX(' + (-currentIndex * 100) + '%)'}">
         <div class="can" ><img src="../../assets/綠色餐廳標章.png" title="綠色餐廳"></div>
@@ -42,7 +67,7 @@
         <div class="can" ><img src="../../assets/環保旅店.png" title="環保旅店是什麼"></div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <div> 

@@ -164,11 +164,11 @@ main {
 
 .main-title {
   font-family: 'Noto Sans TC', sans-serif; 
-  line-height: 1.5; 
+  line-height: 1.6; 
   color: #105503; 
   text-align: left;
   /* font-weight: bold; */
-  font-size: 26px;
+  font-size: 22px;
   margin-top: 5px;
 
 .leaf-icon {
@@ -339,6 +339,7 @@ main {
   margin-top: 0;
   font-size: 3vw;
   font-weight: bold;
+  margin-bottom:50px ;
 }
 
 

@@ -62,9 +62,7 @@
 }
 
 .mat-tab-group {
-  width: 50%; /* 調整 Tab Group 寬度 */
-  max-width: 60%;
-  max-height: 60%;
+  width: 100%; /* 調整 Tab Group 寬度 */
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -98,11 +96,21 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+img{
+  max-width: 100%;
+}
+
+
 @media screen and (max-width: 768px) {
   .mat-tab-group {
-    width: 80%; /* 在较小屏幕下进一步调整 Tab Group 宽度 */
+    width: 80%; 
   }
-  /* 可以进一步调整其他样式，如字体大小等 */
+}
+
+
+.mat-tab-body-content img {
+  max-width: 100%; 
+  height: auto; 
 }
 
 
@@ -175,7 +183,7 @@
 .btn-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin:0 50px 50px 20px;
   justify-content: center;
   align-items: center;
 }
