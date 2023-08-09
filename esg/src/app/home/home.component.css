@@ -305,7 +305,7 @@ main {
   font-size: 18px;
   color: #2e762e;
   font-weight: bold;
-  opacity: 0;
+  opacity: 0.5;
   transition: opacity 0.3s;
 }
 
