@@ -93,9 +93,10 @@ header {
 .illustrate{
     display: flex;
     margin-top: 5px;
+    margin-bottom: 5px;
     color: #004b84;
     font-family: 'Noto Sans TC', serif;
-    font-size: 6vw;
+    font-size: 4vw;
     align-items: center;
 }
 

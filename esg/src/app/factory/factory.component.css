@@ -58,10 +58,13 @@
   padding: 20px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
   margin: 20px;
+  max-width: 100%;
 }
 
 .mat-tab-group {
-  width: 70%; /* 調整 Tab Group 寬度 */
+  width: 50%; /* 調整 Tab Group 寬度 */
+  max-width: 60%;
+  max-height: 60%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -89,12 +92,18 @@
 
 /* 調整圖片的樣式 */
 .mat-tab-body-content img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 60%;
+  max-height: 60%;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  .mat-tab-group {
+    width: 80%; /* 在较小屏幕下进一步调整 Tab Group 宽度 */
+  }
+  /* 可以进一步调整其他样式，如字体大小等 */
+}
 
 
 /* 主要內容畫面 */

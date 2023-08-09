@@ -71,8 +71,9 @@
   padding:20px;
   border-radius: 10px;
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8vw;
   color: #064b23;
+  font-weight: bold;
 }
 
 
@@ -89,6 +90,10 @@
   align-items: center;
   margin-bottom: 10px;
   justify-content: center;
+
+  .star-icon {
+    margin-right: 5px; 
+  }
 }
 
 
