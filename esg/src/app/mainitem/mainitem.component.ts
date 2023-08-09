@@ -1,5 +1,7 @@
 import { Component, OnInit, Input  } from '@angular/core';
 import { Router } from '@angular/router';
+import { Image } from '../image';
+
 
 @Component({
   selector: 'app-mainitem',
@@ -7,7 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./mainitem.component.css']
 })
 export class MainitemComponent {
-
 
   @Input() path: string = '';
   @Input() title: string = '';
