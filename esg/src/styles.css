@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
 *{
     box-sizing: border-box;
     /* 前一個檔案學到加上padding跟border會導致原本設置的長寬會變更大，加上這個後padding跟border就會往內切，而最大值將會保持在你設定的長寬。 */
@@ -22,5 +25,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mdc-tab__text-label {
+  color: #110c74;
+  background-color: #f0f0f0;
+  flex-grow: 1;
+}
+
+
+.mdc-tab__text-label.mat-tab-label-active {
+  color: #35982c ;
+}
 
 

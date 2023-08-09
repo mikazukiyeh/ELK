@@ -6,16 +6,15 @@ $custom-primary: mat-palette($mat-blue);
 $custom-accent: mat-palette($mat-red);
 $custom-theme: mat-light-theme($custom-primary, $custom-accent);
 
-// 在自定义主题中应用变量
+
 @include angular-material-theme($custom-theme);
 
-/* your-custom-styles.scss */
 .custom-tab-label {
-    background-color: $custom-accent-200; /* 使用自定义主题颜色 */
-    color: $custom-primary-700; /* 使用自定义主题颜色 */
-  }
-  
-  .custom-tab-label-active {
-    background-color: $custom-primary-500; /* 使用自定义主题颜色 */
-    color: $custom-accent-700; /* 使用自定义主题颜色 */
-  }
+    background-color: $custom-accent;
+    color: $custom-primary;
+}
+
+.custom-tab-label-active {
+    background-color: $custom-primary;
+    color: $custom-accent;
+}
