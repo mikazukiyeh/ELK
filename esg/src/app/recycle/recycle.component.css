@@ -48,53 +48,6 @@
   }
 }
 
-.wrapper {
-  background-color: #ffffff; /* 白色底色 */
-  border-radius: 10px; /* 圓角 */
-  padding: 20px; /* 設定內邊距，可根據需求自行調整 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
-  margin: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  font-family: 'Noto Sans TC', sans-serif;
-  line-height: 1.6;
-}
-
-/* 第一段描述 */
-
-.illustrate {
-  margin-bottom: 20px;
-}
-
-.container {
-  text-align: justify;
-  border: 2px solid rgb(92, 54, 5);
-  border-radius: 20px;
-  padding: 0 40px;
-  margin: 20px 60px;
-}
-
-
-.illustrate p {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #064b23;
-  font-size: 1.8vw;
-}
-
-.illustrate ul {
-  list-style-type: disc;
-  margin-left: 30px;
-  color: #328231;
-  font-size: 1.5vw;
-}
-
-.illustrate li {
-  margin-bottom: 5px;
-}
-
-
 /* 圖表部分 */
 .chart-container {
   display: flex;
@@ -105,7 +58,13 @@
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: #064b23;
+  font-size: 2vw;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.6;
+  font-weight: bold;
 }
+
 
 .total {
   display: flex;
@@ -142,6 +101,55 @@ canvas {
     font-size: 2vw;
   }
 }
+
+
+.wrapper {
+  background-color: #ffffff; /* 白色底色 */
+  border-radius: 10px; /* 圓角 */
+  padding: 20px; /* 設定內邊距，可根據需求自行調整 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 加入陰影效果，讓容器有立體感 */
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.6;
+}
+
+/* 第一段描述 */
+
+.illustrate {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.container {
+  text-align: justify;
+  border-radius: 20px;
+  padding: 0 40px;
+  margin: 20px 60px;
+}
+
+
+.illustrate p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #064b23;
+  font-size: 1.8vw;
+}
+
+.illustrate ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  color: #328231;
+  font-size: 1.5vw;
+}
+
+.illustrate li {
+  margin-bottom: 5px;
+}
+
+
 
 
 /* 焚化率及回收的部分 */
