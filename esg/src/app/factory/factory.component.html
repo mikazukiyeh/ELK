@@ -7,7 +7,7 @@
     <p><span class="star-icon">🌟</span>目前各縣市有申報各列管物的事業類別分析圖</p>
     <div class="btn-container">
       <div class="btn-row" *ngFor="let city of cities; let i = index">
-        <button  (click)="setSelectedCity(city)">{{ city.name }}</button>
+        <button class="county" (click)="setSelectedCity(city)">{{ city.name }}</button>
       </div>
     </div>
     <div class="iframe-page" *ngIf="selectedCity">
@@ -25,7 +25,7 @@
     <p><span class="star-icon">🌟</span>各縣市工廠煙囪連續自動監測設施</p>
       <div class="btn-container">
         <div class="btn-row" *ngFor="let factory of factories; let i = index">
-          <button  (click)="setselectedFactory(factory)">{{ factory.name }}</button>
+          <button class="county" (click)="setselectedFactory(factory)">{{ factory.name }}</button>
         </div>
       </div>
       <div class="iframe-page" *ngIf="selectedFactory">

@@ -128,7 +128,7 @@
 }
 
 
-button {
+.county {
   background-color: #0e907c;
   color: #fff;
   border: none;
@@ -139,7 +139,7 @@ button {
   font-size: 1.5vw;
 }
 
-button:hover {
+.county:hover {
   background-color: #c43612;
 }
 
