@@ -33,8 +33,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 
-.mdc-tab__text-label.mat-tab-label-active {
-  color: #35982c ;
+.mat-mdc-tab-group,
+.mat-mdc-tab-nav-bar {
+  --mat-tab-header-inactive-label-text-color: #35982c;
+  --mat-tab-header-inactive-focus-label-text-color: #110c74;
+  --mat-tab-header-inactive-hover-label-text-color: #110c74;
 }
 
 
