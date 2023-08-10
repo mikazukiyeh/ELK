@@ -4,19 +4,17 @@
 <div class="wrapper">
   <div class="select-container">
     <div class="instructions">
-      <div>透過政府公開資料整理，我們可以獲知全台灣</div>
+      <div>透過政府公開資料整理，選擇項目可以觀看</div>
       <div *ngIf="selectedOption === 'hotel'">各地擁有環保標章旅館的分佈情形</div>
       <div *ngIf="selectedOption === 'restaurant'">各地擁有環保標章餐廳的分佈情形</div>
       <div *ngIf="selectedOption === 'restroom'">各地擁有環保標章廁所的分佈情形</div>
     </div>
-      <div class="input-container">
-    <label for="options"><span class="star-icon">🌟</span>請選擇項目：</label>
-    <select id="options" [(ngModel)]="selectedOption" (change)="onOptionChange()">
-      <option value="hotel">旅館</option>
-      <option value="restaurant">餐廳</option>
-      <option value="restroom">公廁</option>
-    </select>
-      </div>
+    <div class="input-container">
+      <label></label>
+      <button class="facility" (click)="selectOption('hotel')">旅館</button>
+      <button class="facility" (click)="selectOption('restaurant')">餐廳</button>
+      <button class="facility" (click)="selectOption('restroom')">公廁</button>
+    </div>
   </div>
   <div class="container">
     <ng-container *ngIf="selectedOption === 'hotel'">

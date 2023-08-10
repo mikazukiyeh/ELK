@@ -6,20 +6,27 @@ import { Router } from '@angular/router';
   templateUrl: './environmental.component.html',
   styleUrls: ['./environmental.component.css']
 })
-export class EnvironmentalComponent implements OnInit {
+export class EnvironmentalComponent {
+
+  selectedOption: string = ''; // 初始化為空
+
+
 
   currentIndex = 0;
   totalSlides = 2; // 總圖片數量
-  selectedOption = 'hotel';
 
   constructor(private router: Router) { }
 
-  ngOnInit() {
-    // 自動輪播切換
-    setInterval(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
-    }, 8000); // 每 6 秒切換一張圖片
+  selectOption(option: string) {
+    this.selectedOption = option;
   }
+
+  // ngOnInit() {
+  //   // 自動輪播切換
+  //   setInterval(() => {
+  //     this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
+  //   }, 8000); // 每 6 秒切換一張圖片
+  // }
 
   // 回到首頁，使用 Angular 的路由導航
   navigateToHome(): void {

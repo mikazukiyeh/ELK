@@ -100,14 +100,40 @@
 }
 
 
-select {
-  padding: 8px 15px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
-  font-family: 'cwTeXYen', sans-serif;
-  
+/* 全局按鈕樣式 */
+.facility {
+  background-color: #FFD700; /* 黃色背景色 */
+  color: white; /* 白色字體顏色 */
+  border: none; /* 移除邊框 */
+  border-radius: 8px; /* 圓角 */
+  padding: 10px 20px; /* 內部填充 */
+  font-size: 16px; /* 字體大小 */
+  cursor: pointer; /* 指標樣式 */
+  margin: 5px; /* 按鈕間距 */
+}
+
+/* 鼠標懸停時的效果 */
+.facility:hover {
+  background-color: #FFDB58; /* 淡黃色背景色 */
+}
+
+/* 可愛的樣式，可根據需求自行調整 */
+.facility {
+  background-color: #125b33; /* 淡粉紅色背景色 */
+  color: white; /* 白色字體顏色 */
+  border: none; /* 移除邊框 */
+  border-radius: 50%; /* 圓形按鈕 */
+  padding: 15px; /* 內部填充 */
+  font-size: 20px; /* 字體大小 */
+  cursor: pointer; /* 指標樣式 */
+  margin: 10px; /* 按鈕間距 */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* 邊框陰影 */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 過渡效果 */
+}
+
+.facility:hover {
+  background-color: #69ffa0; /* 淺粉紅色背景色 */
+  transform: scale(1.2); /* 放大效果 */
 }
 
 
