@@ -321,6 +321,13 @@ main {
   border-radius: 50%;
 }
 
+.picture img{
+  width: 160px;
+  height: 160px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
 
 .think {
   font-family: 'Noto Sans TC', sans-serif; 
