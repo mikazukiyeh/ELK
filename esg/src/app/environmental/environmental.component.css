@@ -256,14 +256,16 @@ img{
     color: #fff;
     border-radius: 50%;
     border: none;
-    font-size: 20px;
     cursor: pointer;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: 'Noto Sans TC', sans-serif;
   }
   
-  .back-to-home:before {
+  /* .back-to-home:before {
     content: "\2190";
-  }
+  } */
     
     /* 按鈕懸停效果 */
     button:hover {
