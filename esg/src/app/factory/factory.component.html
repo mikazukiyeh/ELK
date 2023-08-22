@@ -24,8 +24,8 @@
   <div class="container">
     <p><span class="star-icon">🌟</span>台灣工廠煙囪連續自動監測設施總覽圖</p>
     <div class="iframe-page">
-      <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards#/view/1fc1c870-3732-11ee-a364-3102a6bc5805?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-26d%2Cto%3Anow))&show-time-filter=true" height="1350" width="1300"></iframe>
-    </div> 
+      <iframe src="http://34.80.175.10:5601/kibana_iframe/app/dashboards#/view/1fc1c870-3732-11ee-a364-3102a6bc5805?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-26d%2Cto%3Anow))&show-time-filter=true" height="790" width="1300"></iframe>
+    </div>
     <p><span class="star-icon">🌟</span>各縣市工廠煙囪連續自動監測設施</p>
       <div class="btn-container">
         <div class="btn-row" *ngFor="let factory of factories; let i = index">
@@ -34,7 +34,7 @@
       </div>
       <div class="iframe-page" *ngIf="selectedFactory">
         <h3>{{ selectedFactory.name }}</h3>
-        <iframe [src]="SrcUrl" height="1350" width="1300"></iframe>
+        <iframe [src]="SrcUrl" height="1330" width="1300"></iframe>
       </div> 
       <div class="CEMS">
         <img src="../../assets/CEMS監測介紹.png" alt="CEMS監測介紹">
