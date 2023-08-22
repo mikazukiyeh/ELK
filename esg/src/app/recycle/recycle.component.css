@@ -197,6 +197,12 @@ canvas {
   margin-bottom: 8px;
 }
 
+
+.incineration strong {
+  font-weight: bold;
+  color: #FF0000;
+}
+
 .incineration ol li::before {
   content: counter(item);
   counter-increment: item;
