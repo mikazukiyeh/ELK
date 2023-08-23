@@ -218,20 +218,30 @@ canvas {
 
 /* 將 iframe 置中 */
 .iframe-page {
+  position: relative;
   padding: 20px;
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  width: 100%;
+  height: 0;
   margin: 0 auto;
+  padding-bottom: 93.84%;
+}
+
+.iframe-page iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
 }
 
 /* 媒體查詢 */
 @media (max-width: 600px) {
   /* 視窗寬度小於600px時，設定container的最大寬度 */
-  .iframe-page {
+  /* .iframe-page {
     width: 100%; 
-    /* height: 100%;  */
-  }
+  } */
 
 }
 /* 摘要部分 */
