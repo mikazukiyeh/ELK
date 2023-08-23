@@ -219,7 +219,7 @@ canvas {
 /* 將 iframe 置中 */
 .iframe-page {
   position: relative;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   justify-content: center;
   width: 100%;
