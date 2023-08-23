@@ -310,9 +310,18 @@ main {
   transition: opacity 0.3s;
 }
 
+.name a {
+text-decoration: none;
+color: #2e762e;
+}
+
 .picture-with-name:hover .name {
   opacity: 1;
 }
+
+.name a:hover {
+  color: #b32a00;
+  }
 
 .picture {
   width: 160px;
