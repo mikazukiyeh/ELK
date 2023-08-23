@@ -240,9 +240,13 @@ iframe{
   margin-top: 15px;
 }
 
+/* 最後的補充 */
+
 .star-icon{
   margin-right: 5px;
+  vertical-align: middle;
 }
+
 .container a{
   text-decoration: none;
   color: #064b23;
